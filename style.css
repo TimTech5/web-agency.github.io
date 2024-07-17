@@ -192,9 +192,8 @@ nav box-icon{
 .about-left,.about-middle,.about-right{
   flex-basis:50%;
   padding:1.6rem;
-  
-
 }
+
 .row h1{
 font-size: 2rem;
 
@@ -296,6 +295,7 @@ text-align:center;
 .testimony{
   background-color: #222;
   color:whitesmoke;
+  font-weight: 100;
 }
 
 .testimony .test1{
@@ -316,7 +316,9 @@ text-align:center;
   object-fit: cover;
 
 }
-
+.test1-content{
+  font-weight: 200;
+}
 
 
 /*contact*/
@@ -358,6 +360,11 @@ footer{
   text-align: center;
 }
 
+.footer-heart{
+  color:#571127;
+  
+}
+
 
 
 @media only screen and (max-width: 768px) {
@@ -374,12 +381,7 @@ footer{
 
   }
 
-  #close{
-    position:absolute;
-    top:24px;
-    left:450px;
-    z-index:2;
-  }
+  
 nav box-icon{
   display: block;
     font-size: 25px;
@@ -411,49 +413,30 @@ nav box-icon{
     cursor: pointer;
     
   }
-  /*
-  nav box-icon {
-    display: block;
-    position: absolute;
-    top: 18px;
-    right: 42px;
-  }
-  nav ul {
-    background: whitesmoke;
-    display: none;
-    
-  }
-
-  .showmenu {
-    display: block;
-    position: absolute;
-    left:-320px;
-    
-  }
-
-  */
-
   
-
   nav ul li a {
     color:whitesmoke;
     font-size: 1.6rem;
     
   }
 
-
-
   .logo img {
     width:170px;
     margin: 0;
-    margin-left:-40px;
-    
+    margin-left:-40px; 
   }
 
+  .header{
+    width: 100%;
+    top:16%;
+    left:0;
+    text-align: center;
+    padding:0 8px;
+  }
   .header-content{
-    width:80%;
-    position:relative;
-    top:140px;
+    width:85%;
+    
+    top:50px;
     left:20px;
   }
   .header-content h1{
@@ -476,19 +459,64 @@ nav box-icon{
     margin:1.2rem 0;
     display:block;
     border:1px solid #ccc;
-  
+    margin:1.2rem auto;
   }
   
   input[type=submit]{
-    width:50%;
+    margin:1.2rem auto;
     background-color:#571127;
     color:white;
     padding:14px 20px;
-    margin:8px 0;
+    width:90%;
     cursor:pointer;
     border:none;
+    display: block;
   }
-  
+
+  .about-left,.about-middle,.about-right{
+    flex-basis:50%;
+    padding:1.6rem;
+    margin-top:-20px;
+  }
+  /*
+  input[type=text],
+  input[type=email],
+  input[type=submit]{
+    width:80px;
+    margin:1.2rem auto;
+  }
+    
+
+
+
+*/
+.process-content{
+  margin-top:20px;
+}
+
+.process .box1,
+.process .box2,
+.process .box3{
+  text-align: center;
+}
+
+.testimony .text{
+  margin:1.6rem 0;
+
+}
+
+.contact form input,
+.contact textarea{
+  width:100%;
+
+}
+
+
+
+
+
+
+
 }
 
 
